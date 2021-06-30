@@ -59,7 +59,7 @@
             check the policy periodically for updates.
           </p>
 
-          <ul v-for="t in toc" :key="content" class="toc">
+          <ul v-for="t in toc" :key="t.content" class="toc">
             <h2
               style="
                 list-style-type: none;

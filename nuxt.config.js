@@ -20,10 +20,9 @@ export default {
     fix: true,
   },
 
-  // TODO: Add Google Analytics tag
-  /* googleAnalytics: {
-    id: 'UA-XXX-X' 
-  } */
+  googleAnalytics: {
+    id: 'G-8B08SCCW90',
+  },
 
   css: [],
 
@@ -31,12 +30,9 @@ export default {
 
   components: true,
 
-  buildModules: [
-    '@nuxt/typescript-build',
-    // '@nuxtjs/google-analytics', TODO: Uncomment when GA property has been created.
-  ],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/google-analytics'],
 
-  modules: [],
+  modules: ['@nuxtjs/sitemap'],
 
   build: {},
 }
