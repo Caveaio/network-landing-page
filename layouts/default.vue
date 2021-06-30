@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <OrganismsTop />
-      <Nuxt />
+    <Nuxt />
     <OrganismsFooter />
   </div>
 </template>
@@ -28,7 +28,7 @@
   margin: 0;
   padding: 0;
   transition: 0.3s;
-  color:white;
+  color: white;
   font-family: 'Oswald';
   &::before,
   &::after {
@@ -58,66 +58,65 @@ a {
   text-decoration: none;
 }
 
-
 .gltichingbtn {
-    width: 200px;
-    display: block;
-    position: relative;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 8px 30px;
-    font-size: .75em;
-    letter-spacing: .35em;
-    text-align: center;
-    text-transform: uppercase;
-    border: 1px solid hsla(0,0%,100%,.2);
-    transition: all .1s ease;
-    &:before, 
-    &:after {
-      content: 'APPLY NOW';
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 8px 0;
-      width: 100%;
-      -webkit-clip: rect(0px, 0px, 0px, 0px);
-      clip: rect(0px, 0px, 0px, 0px);
-      text-shadow: 2px 0px 0px #71F95B, -2px 0px 4px #A577FF;
-      background: hsla(0,0%,100%,.2);
-      color: #000;
-    }
-    
-    &:before {
-      left: -3px;
-      top: -2px;
-      text-shadow: 2px 0 #fff;
-      box-shadow: 2px 0 #fff;
-    }
-    &:after {
-      left: 2px;
-      bottom: -2px;
-      text-shadow: -1px 0 #fff;
-      box-shadow: -1px 0 #fff;
-    }
-    &:hover {
-      background: white;
-      color: black;
-    }
-    &:hover:before {
-        animation: glitch-test 1.5s infinite linear alternate-reverse;
-    }
-    &:hover:after {
-        animation: glitch-test 2s infinite linear alternate;
-    }
+  width: 200px;
+  display: block;
+  position: relative;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 30px;
+  font-size: 0.75em;
+  letter-spacing: 0.35em;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  transition: all 0.1s ease;
+  &:before,
+  &:after {
+    content: 'APPLY NOW';
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 0;
+    width: 100%;
+    -webkit-clip: rect(0px, 0px, 0px, 0px);
+    clip: rect(0px, 0px, 0px, 0px);
+    text-shadow: 2px 0px 0px #71f95b, -2px 0px 4px #a577ff;
+    background: hsla(0, 0%, 100%, 0.2);
+    color: #000;
+  }
+
+  &:before {
+    left: -3px;
+    top: -2px;
+    text-shadow: 2px 0 #fff;
+    box-shadow: 2px 0 #fff;
+  }
+  &:after {
+    left: 2px;
+    bottom: -2px;
+    text-shadow: -1px 0 #fff;
+    box-shadow: -1px 0 #fff;
+  }
+  &:hover {
+    background: white;
+    color: black;
+  }
+  &:hover:before {
+    animation: glitch-test 1.5s infinite linear alternate-reverse;
+  }
+  &:hover:after {
+    animation: glitch-test 2s infinite linear alternate;
+  }
 }
 .glitchingbtn > a {
-    display: block;
-    color: white;
-    text-decoration: none;
-    width: 175px;
-    font-family: "Oswald";
+  display: block;
+  color: white;
+  text-decoration: none;
+  width: 175px;
+  font-family: 'Oswald';
 }
 @keyframes glitch-test {
   0% {
@@ -151,7 +150,7 @@ a {
     clip: rect(-3px, 600px, 0px, 0px);
   }
   58.82353% {
-    clip: rect(100px, 450px,100px, 0px);
+    clip: rect(100px, 450px, 100px, 0px);
   }
   64.70588% {
     clip: rect(0px, 450px, 0px, 0px);
@@ -175,5 +174,4 @@ a {
     clip: rect(0px, 450px, 0px, 0px);
   }
 }
-
 </style>
