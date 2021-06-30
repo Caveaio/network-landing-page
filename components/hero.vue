@@ -1,6 +1,6 @@
 <template>
     <div class="hero">
-        <img src="/hero.png" alt="">
+        <img src="@/assets/hero.png" alt="">
         <div class="content">
             <h1>GET DISCOVERED.</h1>
             <h2>JOIN THE CREATOR <i class="glitch" data-text="NETWRK">NETWRK</i></h2>

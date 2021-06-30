@@ -1,19 +1,19 @@
 <template>
   <div class="talent-container">
       <div class="main-tc">
-        <img class="main-icon" src="/cup-graphic.png" alt="">
+        <img class="main-icon" src="@/assets/cup-graphic.png" alt="Trophy icon">
         <div class="context-tc">
             <h3>JOIN THE BEST TALENT FROM ACROSS THE GLOBE!</h3>
-            <p>NETWRK is the place to go to grow, develop your game and become part of a pro organization, wether you are a creator, player, or streamer. Form friendships and partnerships, and earn real rewards for chasing your dreams.</p>
+            <p>NETWRK is the place to go to grow, develop your game and become part of a pro organization, whether you are a creator, player, or streamer. Form friendships and partnerships, and earn real rewards for chasing your dreams.</p>
             <p>Learn from and connect with iconic esports businesses</p>
         </div>
         <div class="b-icons">
-            <img src="/fnatic.png" alt="fnatic">
-            <img src="/faze.png" alt="faze">
-            <img src="/g2.png" alt="">
-            <img src="/g100.png" alt="">
-            <img src="/ge.png" alt="">
-            <img src="/n.png" alt="asd">
+            <img src="@/assets/fnatic.png" alt="FNATIC logo">
+            <img src="@/assets/faze.png" alt="Faze clan logo">
+            <img src="@/assets/g2.png" alt="G2 Esport logo">
+            <img src="@/assets/g100.png" alt="100 Thieves logo">
+            <img src="@/assets/ge.png" alt="Guild esport logo">
+            <img src="@/assets/n.png" alt="Team EnvyUs logo">
         </div>
       </div>
   </div>

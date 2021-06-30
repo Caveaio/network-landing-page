@@ -29,6 +29,7 @@
   padding: 0;
   transition: 0.3s;
   color:white;
+  font-family: 'Oswald';
   &::before,
   &::after {
     box-sizing: border-box;

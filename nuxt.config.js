@@ -1,8 +1,8 @@
 export default {
   target: 'static',
-  router: {
-    base: 'https://caveaio.github.io/network-landing-page' // Remove when domain is CNAMEd
-  },
+  /*  router: {
+    base: 'https://caveaio.github.io/network-landing-page', // Remove when domain is CNAMEd
+  }, */
   head: {
     title: 'netwrk',
     htmlAttrs: {
@@ -15,7 +15,7 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  
+
   eslint: {
     fix: true,
   },
