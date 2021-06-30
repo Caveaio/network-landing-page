@@ -24,6 +24,12 @@ export default {
     id: 'G-8B08SCCW90',
   },
 
+  sitemap: {
+    hostname: 'https://netwrk.gg',
+    gzip: true,
+    exclude: ['/policy', '/terms'],
+  },
+
   css: [],
 
   plugins: [],
