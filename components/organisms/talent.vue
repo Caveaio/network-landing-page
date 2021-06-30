@@ -31,10 +31,10 @@ export default {
         justify-content: center;
         align-items: center;
         margin-bottom: 145px;
+        
         .main-tc {
             display: flex;
             flex-direction: column;
-            width: 1138px;
             height: auto;
             background: #1A162F;
             border-radius: 20px;
@@ -58,7 +58,9 @@ export default {
         }
         .context-tc {
             h3 {
-                padding-left: 315px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
                 font-family: Oswald;
                 font-style: normal;
                 font-weight: bold;
@@ -79,6 +81,9 @@ export default {
                 }
             }
             p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 margin-left: 20%;
                 margin-right: 20%;
                 font-family: Oswald;
@@ -98,7 +103,6 @@ export default {
                 justify-content: center;
                 align-items: center;
                 color: #A09CAA;
-                margin-left: 33%;
                 @media screen and (max-width: 380px) {
                     justify-content: center;
                     display: flex;

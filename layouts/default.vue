@@ -23,7 +23,7 @@
   min-height: calc(100vh - 70px);
 }
 * {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -174,6 +174,5 @@ a {
     clip: rect(0px, 450px, 0px, 0px);
   }
 }
-
 
 </style>

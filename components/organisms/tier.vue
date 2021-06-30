@@ -118,6 +118,14 @@ export default {
                     line-height: 22px;
                     width: 80%;
                 }
+                @media screen and (min-width: 1024px) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    line-height: 22px;
+                    width: 80%;
+                }
             }
             blockquote {
                 margin-top: 25px;
@@ -238,10 +246,5 @@ export default {
         }
     }
 
-     @media screen and (max-width: 380px) {
-        .faq-wrap {
-
-        }
-    }
 
 </style>
