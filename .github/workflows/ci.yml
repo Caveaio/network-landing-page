@@ -41,4 +41,8 @@ jobs:
         run: npm ci
 
       - name: Run linter 👀
-        run: npm run lint
+        run: npm run pre-commit
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          message: 'Automatic formatting + linting from ci.yml'
