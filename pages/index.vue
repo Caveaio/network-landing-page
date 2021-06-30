@@ -1,16 +1,14 @@
 <template>
   <div class="container">
-    <OrganismsHero />
-    <OrganismsSection />
-    <OrganismsTalent />
-    <OrganismsTier />
+    <Hero />
+    <Section />
+    <Talent />
+    <Tier />
   </div>
 </template>
 
 <script>
-  export default ({
-    
-  })
+export default {}
 </script>
 
 <style lang="scss"></style>

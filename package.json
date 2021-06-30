@@ -8,11 +8,13 @@
     "heroku-postbuild": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "npm run lint:js",
-    "prettier": "npx prettier --write ."
+    "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint-fix": "eslint --fix --ext \".js,.vue\" --ignore-path .gitignore . ",
+    "format": "npx prettier --write .",
+    "pre-commit": "npm run format && npm run lint-fix"
   },
   "dependencies": {
+    "@nuxtjs/sitemap": "^2.4.0",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
     "serve": "^12.0.0"
@@ -22,6 +24,7 @@
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config-typescript": "^6.0.0",
     "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/google-analytics": "^2.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
