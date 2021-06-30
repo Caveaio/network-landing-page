@@ -1,13 +1,14 @@
 <template>
   <div class="container">
-    <OrganismsTop />
+    <TopNav />
     <Nuxt />
-    <OrganismsFooter />
+    <Footer />
   </div>
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 :root {
   --white: #fff;
   --dark-900: #101125;
@@ -29,7 +30,7 @@
   padding: 0;
   transition: 0.3s;
   color: white;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   &::before,
   &::after {
     box-sizing: border-box;
@@ -62,6 +63,7 @@ a {
   width: 200px;
   display: block;
   position: relative;
+  margin: auto;
   background: none;
   border: none;
   outline: none;
@@ -116,7 +118,6 @@ a {
   color: white;
   text-decoration: none;
   width: 175px;
-  font-family: 'Oswald';
 }
 @keyframes glitch-test {
   0% {

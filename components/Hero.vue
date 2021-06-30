@@ -1,6 +1,6 @@
 <template>
-  <div class="hero">
-    <img src="@/assets/hero.png" alt="" />
+  <div class="hero" :style="{ backgroundImage: `url(${backgroundImagePath})` }">
+    <!--  <img src="@/assets/hero.png" alt="" /> -->
     <div class="content">
       <h1>GET DISCOVERED.</h1>
       <h2>JOIN THE CREATOR <i class="glitch" data-text="NETWRK">NETWRK</i></h2>
@@ -13,36 +13,48 @@
 </template>
 
 <script>
+import backgroundImagePath from '@/assets/hero.png'
 export default {
-  name: 'Header',
+  name: 'Hero',
+  data() {
+    return {
+      backgroundImagePath,
+    }
+  },
 }
 </script>
 <style lang="scss" scoped>
 @use "sass:math";
-.hero img {
-  width: 100%;
-  z-index: 2;
+.hero {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  place-self: center;
   @media screen and (max-width: 380px) {
     width: 100vw;
     height: 300px;
   }
 }
 .content {
-  font-family: 'Oswald';
-  position: absolute;
+  text-align: center;
+
+  /*   position: absolute;
   z-index: 1;
   top: 35%;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  // text-align:center;
   @media screen and (max-width: 380px) {
     top: 0%;
   }
   @media screen and (min-width: 768px) {
     top: 15%;
-  }
+  } */
   p {
-    font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 26px;
@@ -54,7 +66,6 @@ export default {
     // }
   }
   h2 {
-    font-style: normal;
     font-weight: bold;
     font-size: 76px;
     line-height: 80px;
@@ -75,7 +86,6 @@ export default {
     }
   }
   h1 {
-    font-style: normal;
     font-weight: bold;
     font-size: 76px;
     line-height: 80px;
@@ -109,7 +119,7 @@ export default {
     color: #f1f1f1;
     border-radius: 10px;
     border: none;
-    font-style: normal;
+
     font-weight: bold;
     font-size: 16px;
     line-height: 25px;
@@ -134,7 +144,7 @@ export default {
   justify-content: flex-end;
   color: #333;
   top: 0;
-  position: absolute;
+  // position: absolute;
   padding-top: 50px;
   padding-right: 150px;
 }
@@ -150,7 +160,6 @@ export default {
 .nav ul > li > button {
   color: #ffffff;
   background-color: transparent;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
@@ -163,6 +172,7 @@ export default {
 }
 
 button {
+  text-align: center;
   width: 165px;
   height: 54px;
   @media screen and (max-width: 380px) {

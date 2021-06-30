@@ -265,7 +265,6 @@ export default {
 
 <style lang="scss">
 h1 {
-  font-family: Oswald;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,7 +276,6 @@ ul > li {
 }
 
 .policy {
-  font-family: Oswald;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -297,8 +295,6 @@ ul > li {
     border-radius: 5px;
     margin-bottom: 6rem;
     max-width: 760px;
-    .p-paragraph {
-    }
   }
 }
 </style>

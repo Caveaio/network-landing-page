@@ -69,16 +69,14 @@
 
 <script>
 export default {
-  name: 'Header',
+  name: 'Footer',
 }
 </script>
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 footer {
   width: 100%;
   height: 152px;
   background: #0b0b19;
-  font-family: Oswald;
   font-style: normal;
   font-weight: normal;
   left: 0;
