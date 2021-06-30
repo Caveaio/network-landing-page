@@ -11,7 +11,7 @@
     "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint-fix": "eslint --fix --ext \".js,.vue\" --ignore-path .gitignore . ",
     "format": "npx prettier --write .",
-    "pre-commit": "npm run prettier && npm run lint-fix"
+    "pre-commit": "npm run format && npm run lint-fix"
   },
   "dependencies": {
     "@nuxtjs/sitemap": "^2.4.0",
