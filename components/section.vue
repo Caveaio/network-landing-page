@@ -121,7 +121,10 @@ export default {
       @media screen and (max-width: 680px) {
           padding-left: 0px;
           width: 100%;
-        
+      }
+      @media screen and (min-width: 1024px) {
+          padding-left: 0px;
+          width: 100%;
       }
     }
     i {

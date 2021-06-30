@@ -1,7 +1,6 @@
 <template>
   <footer>
       <div class="rights">
-        <p>&copy; All rights reserved NETWRk {{ new Date().getFullYear() }}</p>
         <div class="socials">
             <i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="nonzero" d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm.915 18.642v-6.07h1.96l.294-2.366h-2.254V8.695c0-.685.183-1.152 1.128-1.152h1.205V5.427a15.52 15.52 0 0 0-1.756-.094c-1.738 0-2.927 1.103-2.927 3.128v1.745H8.6v2.365h1.965v6.071h2.35z" opacity=".205"></path></svg>
@@ -14,6 +13,7 @@
             </i>
         </div>
         <ul>
+            <li>&copy; All rights reserved NETWRk {{ new Date().getFullYear() }}</li>
             <li>Made by <a class="cavea" href="https://cavea.io" target="_blank">Cavea.io</a></li>
             <NuxtLink to="/terms">
                 <li><a href="">Terms of Service</a></li>
@@ -85,22 +85,23 @@ export default {
         @media screen and (max-width: 380px) {
             margin-top: 0px;
             display: inline-block;
-            
         }
         .socials {
             display: none;
         }
         ul {
             display:flex;
-            margin-left: auto;
             @media screen and (max-width: 380px) {
-                // display: inline-block;
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 margin-top: 0px;
                 margin-left: 0px;
             }
+            @media screen and (min-width: 1024px) {
+                margin-top: 25px;
+                margin-left: 0px;
+            } 
             li {
                 margin-top: 62px;
                 justify-content: flex-end;
@@ -110,6 +111,9 @@ export default {
                 @media screen and (max-width: 380px) {
                     display: inline-block;
                     margin-top: 5px;
+                }
+                @media screen and (min-width: 1024px) {
+                    margin-top: 5px;   
                 }
                 a {
                     color: #BCB9C3;

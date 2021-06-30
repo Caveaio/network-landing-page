@@ -17,6 +17,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  @use "sass:math";
   .hero img {
     width: 100%;
     z-index: 2;
@@ -25,26 +26,20 @@ export default {
         height: 300px;
     }
   }
-  // .logo {
-  //   z-index: 1;
-  //   position:absolute;
-  //   top: 0;
-  //   padding-left: 150px;
-  //   padding-top: 50px;
-  //   @media screen and (max-width: 380px) {
-  //       display: none;
-  //   }
-  // }
   .content {
-     @media screen and (max-width: 380px) {
-        top: 20%;
-    }
     font-family: "Oswald";
     position: absolute;
     z-index: 1;
     top: 35%;
-    left: 50%;
+    margin-left: 50%;
     transform: translate(-50%, -50%);
+    // text-align:center;
+    @media screen and (max-width: 380px) {
+      top: 0%;
+    }
+     @media screen and (min-width: 768px) {
+      top: 15%;
+    }
     p {
       font-style: normal;
       font-weight: normal;
@@ -53,6 +48,9 @@ export default {
       @media screen and (max-width: 380px) {
           line-height: 0px;
       }
+      // @media screen and (min-width: 1024px) {
+      //   line-height: 0px;
+      // }
     }
     h2 {
       font-style: normal;
@@ -65,6 +63,14 @@ export default {
           line-height: 0px;
           text-shadow: none;
           white-space: nowrap;
+          margin-top: 10px;
+      }
+      @media screen and (min-width: 1024px) {
+         font-size: 50px;
+          line-height: 0px;
+          text-shadow: none;
+          white-space: nowrap;
+          margin-top: 10px;
       }
     }
     h1 {
@@ -76,6 +82,10 @@ export default {
       @media screen and (max-width: 380px) {
           font-size: 25px;
           text-shadow: none;
+          line-height: 10px;
+      }
+       @media screen and (min-width: 1024px) {
+          font-size: 50px;
           line-height: 10px;
       }
     }
@@ -168,8 +178,9 @@ export default {
 }
 @keyframes noise-anim{
   $steps:20;
+
   @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
+    #{percentage($i*math.div(1, $steps))}{
       clip:rect(random(100)+px,9999px,random(100)+px,0);
     }
   }
@@ -188,8 +199,9 @@ export default {
 
 @keyframes noise-anim-2{
   $steps:20;
+  
   @for $i from 0 through $steps{
-    #{percentage($i*(1/$steps))}{
+    #{percentage($i*math.div(1, $steps))}{
       clip:rect(random(100)+px,9999px,random(100)+px,0);
     }
   }
@@ -206,12 +218,4 @@ export default {
   clip:rect(0,900px,0,0); 
   animation:noise-anim-2 3s infinite linear alternate-reverse;
 }
-
-
-
-
-
-
-
-
 </style>
