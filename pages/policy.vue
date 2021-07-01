@@ -269,7 +269,6 @@ h1 {
   justify-content: center;
   align-items: center;
   margin-top: 250px;
-
 }
 ul {
   margin-left: 15px;
@@ -303,7 +302,6 @@ h1 {
   justify-content: center;
   align-items: center;
   // margin-top: 250px;
-
 }
 
 ul > li {
