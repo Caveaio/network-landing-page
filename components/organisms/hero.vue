@@ -34,13 +34,11 @@ export default {
   top: 35%;
   margin-left: 50%;
   transform: translate(-50%, -50%);
-  // text-align:center;
+
   @media screen and (max-width: 380px) {
     top: 0%;
   }
-  //  @media screen and (min-width: 768px) {
-  //   top: 15%;
-  // }
+  
   p {
     font-style: normal;
     font-weight: normal;

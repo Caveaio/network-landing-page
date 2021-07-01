@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <TopNav />
     <Nuxt />
     <Footer />
@@ -7,7 +7,8 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400&display=swap');
 
 :root {
   --white: #fff;
@@ -21,8 +22,22 @@
   --dark-100: #d8d6dc;
 }
 .container {
-  min-height: calc(100vh - 70px);
+  max-width: 1440px;
+  padding: 0 2.5rem;
+  width: calc(100% - 5rem);
+  margin: 0 auto;
+
+  @media screen and (max-width: 380px) {
+    padding: 0 1.5rem;
+    width: calc(100% - 3rem);
+  }
 }
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
 * {
   // box-sizing: border-box;
   line-height: 1.6;
@@ -30,7 +45,7 @@
   padding: 0;
   transition: 0.3s;
   color: white;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   &::before,
   &::after {
     box-sizing: border-box;
@@ -60,28 +75,38 @@ a {
 }
 
 .gltichingbtn {
-  width: 200px;
+  width: 160px;
   display: block;
   position: relative;
   margin: auto;
   background: none;
-  border: none;
+  border: 0;
   outline: none;
+  font-family: 'Work Sans', sans-serif;
+  overflow: hidden;
   cursor: pointer;
-  padding: 8px 30px;
-  font-size: 0.75em;
-  letter-spacing: 0.35em;
+  font-weight: 700;
+  padding: .75rem 30px;
+  font-size: 0.875em;
+  letter-spacing: 0.125em;
+  background-color: #7c6adf;
+  border-radius: 25px;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid hsla(0, 0%, 100%, 0.2);
   transition: all 0.1s ease;
+
+  @media screen and (max-width: 380px) {
+    width: 100%;
+    padding: .75rem 0;
+  }
+
   &:before,
   &:after {
     content: 'APPLY NOW';
     position: absolute;
     top: 0;
     left: 0;
-    padding: 8px 0;
+    padding: .75rem 0;
     width: 100%;
     -webkit-clip: rect(0px, 0px, 0px, 0px);
     clip: rect(0px, 0px, 0px, 0px);

@@ -1,9 +1,9 @@
 <template>
   <div class="hero" :style="{ backgroundImage: `url(${backgroundImagePath})` }">
     <!--  <img src="@/assets/hero.png" alt="" /> -->
-    <div class="content">
-      <h1>GET DISCOVERED.</h1>
-      <h2>JOIN THE CREATOR <i class="glitch" data-text="NETWRK">NETWRK</i></h2>
+    <div class="content container">
+      <h1>Get discovered.</h1>
+      <h2>Join the creator <span class="glitch" data-text="NETWRK">NETWRK</span></h2>
       <p>Stream and play. Become a pro.</p>
       <div>
         <a href="#" class="gltichingbtn" data-text="Apply Now">Apply Now</a>
@@ -26,88 +26,75 @@ export default {
 <style lang="scss" scoped>
 @use "sass:math";
 .hero {
-  width: 100vw;
+  width: calc(100vw - 3rem);
   height: 100vh;
+  max-height: 740px;
+  padding: 0 1.5rem;
   max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  place-content: center;
   place-items: center;
-  place-self: center;
+
   @media screen and (max-width: 380px) {
-    width: 100vw;
-    height: 300px;
+    height: 100vh;
+    width: 100%;
+    padding: 3rem 0 0;
   }
 }
 .content {
   text-align: center;
 
-  /*   position: absolute;
-  z-index: 1;
-  top: 35%;
-  margin-left: 50%;
-  transform: translate(-50%, -50%);
   @media screen and (max-width: 380px) {
-    top: 0%;
+    text-align: left;
   }
-  @media screen and (min-width: 768px) {
-    top: 15%;
-  } */
-  p {
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
-    @media screen and (max-width: 380px) {
-      line-height: 0px;
-    }
-    // @media screen and (min-width: 1024px) {
-    //   line-height: 0px;
-    // }
-  }
+
   h2 {
     font-weight: bold;
-    font-size: 76px;
-    line-height: 80px;
+    font-size: 3rem;
     text-shadow: 2px 0px 0px #71f95b, -2px 0px 4px #a577ff;
-    @media screen and (max-width: 380px) {
-      font-size: 25px;
-      line-height: 0px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.875rem;
       text-shadow: none;
-      white-space: nowrap;
-      margin-top: 10px;
+      margin: .5rem 0 1rem;
     }
-    @media screen and (min-width: 1024px) {
-      font-size: 50px;
-      line-height: 0px;
+
+    @media screen and (max-width: 380px) {
+      font-size: 1.25rem;
       text-shadow: none;
-      white-space: nowrap;
-      margin-top: 10px;
+      margin: .5rem 0 1rem;
     }
   }
   h1 {
     font-weight: bold;
     font-size: 76px;
-    line-height: 80px;
     text-shadow: 2px 0px 0px #71f95b, -2px 0px 4px #a577ff;
-    @media screen and (max-width: 380px) {
-      font-size: 25px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
       text-shadow: none;
-      line-height: 10px;
     }
-    @media screen and (min-width: 1024px) {
-      font-size: 50px;
-      line-height: 10px;
+
+    @media screen and (max-width: 380px) {
+      font-size: 2rem;
+      text-shadow: none;
     }
   }
   p {
-    padding-top: 21px;
-    padding-bottom: 44px;
+    font-size: 1.5rem;
+    margin: 1.5rem 0 2.5rem;
+
     @media screen and (max-width: 380px) {
-      font-size: 15px;
+      font-size: 1.125rem;
       text-shadow: none;
       padding-top: 10px;
       padding-bottom: 22px;
+    }
+
+    @media screen and (max-width: 768px) {
+      text-shadow: none;
+      font-size: 1.25rem;
     }
   }
   i {

@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div class="section container">
     <div class="inner-section">
       <i>
         <svg
@@ -74,7 +74,7 @@
           </defs>
         </svg>
       </i>
-      <h3>GET SCOUTED</h3>
+      <h3>Get scouted</h3>
       <p>
         We're looking for you. You're the new wave of creators, streamers,
         players, dreamers that we are going to propel into the future.
@@ -154,14 +154,13 @@
           </defs>
         </svg>
       </i>
-      <h3>GET CONTRACTED</h3>
+      <h3>Get contracted</h3>
       <p>
         Be assigned and level up through a tier list. On the Path to fame,
         unlock new rewards for you and your fans.
       </p>
     </div>
     <div class="inner-section">
-      <i>
         <svg
           width="57"
           height="57"
@@ -233,8 +232,7 @@
             </filter>
           </defs>
         </svg>
-      </i>
-      <h3>BECOME A PRO</h3>
+      <h3>Become a pro</h3>
       <p>
         Learn from people who've already reached the top. Create your own unique
         brand and become a pro.
@@ -250,20 +248,29 @@ export default {
 </script>
 <style lang="scss" scoped>
 .section {
-  padding: 100px;
+  padding: 100px 0 120px;
   flex-shrink: 1;
   display: flex;
   text-align: center;
-  @media screen and (max-width: 380px) {
-    display: inline-block;
-    flex-shrink: 0;
+  place-content: center;
+
+  @media screen and (max-width: 991px) {
+    flex-direction: column;
+    align-items: center;
   }
+
   .inner-section {
-    width: 33.3%;
+    width: calc(33.3% - 4rem);
     flex-shrink: 0;
-    @media screen and (max-width: 680px) {
+    padding: 0 2rem;
+    max-width: 350px;
+
+    @media screen and (max-width: 991px) {
       width: 100%;
-      margin-bottom: 15px;
+      
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
     }
   }
   p {
@@ -272,7 +279,7 @@ export default {
     font-size: 16px;
     line-height: 22px;
     color: #bcb9c3;
-    padding-left: 65px;
+
     @media screen and (max-width: 680px) {
       padding-left: 0px;
       width: 100%;
