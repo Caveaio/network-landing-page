@@ -263,12 +263,47 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 250px;
+
+}
+ul {
+  margin-left: 15px;
+}
+ul > li {
+  margin-top: 5px;
+}
+
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  .p-section {
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-top: 15px;
+    }
+    background-color: #1a162f;
+    padding: 4rem 5rem;
+    border-radius: 5px;
+    margin-bottom: 6rem;
+    max-width: 760px;
+  }
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-top: 250px;
+
 }
 
 ul > li {

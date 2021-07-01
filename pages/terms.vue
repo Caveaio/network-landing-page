@@ -1039,12 +1039,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 h1 {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 250px;
+
 }
 ul {
   margin-left: 15px;
