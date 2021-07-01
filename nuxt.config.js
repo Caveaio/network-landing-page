@@ -2,7 +2,7 @@ export default {
   target: 'static',
   router: {
     base: 'https://caveaio.github.io/network-landing-page', // Remove when domain is CNAMEd
-  }, 
+  },
   head: {
     title: 'NETWRK',
     htmlAttrs: {
