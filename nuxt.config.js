@@ -15,7 +15,6 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }], // TODO: Add favicon
   },
-
   eslint: {
     fix: true,
   },
