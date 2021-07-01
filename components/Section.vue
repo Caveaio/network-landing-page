@@ -193,7 +193,7 @@
               color-interpolation-filters="sRGB"
             >
               <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrix
+              <feColorMatrixHeader
                 in="SourceAlpha"
                 type="matrix"
                 values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
@@ -249,7 +249,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 .section {
   padding: 100px;
   flex-shrink: 1;
@@ -268,7 +267,6 @@ export default {
     }
   }
   p {
-    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -297,7 +295,6 @@ export default {
   h3 {
     padding-top: 26px;
     padding-bottom: 10px;
-    font-family: 'Oswald', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 26px;

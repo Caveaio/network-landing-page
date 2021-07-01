@@ -61,11 +61,11 @@ export default {
     }
   }
   .context-tc {
+    text-align: center;
     h3 {
       display: flex;
       justify-content: center;
       align-content: center;
-      font-family: Oswald;
       font-style: normal;
       font-weight: bold;
       font-size: 26px;
@@ -76,7 +76,6 @@ export default {
         display: flex;
         align-items: center;
         padding-left: 0px;
-        font-family: Oswald;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -90,14 +89,12 @@ export default {
       align-items: center;
       margin-left: 20%;
       margin-right: 20%;
-      font-family: Oswald;
       font-style: normal;
       font-weight: normal;
       padding-bottom: 54px;
       @media screen and (max-width: 380px) {
         margin-left: 25px;
         margin-right: 25px;
-        font-family: Oswald;
         font-style: normal;
         font-weight: normal;
         padding-bottom: 0px;

@@ -74,9 +74,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
 a {
-  font-family: 'Oswald';
   margin-bottom: 15px;
 }
 button {
@@ -101,7 +99,6 @@ button:hover {
     flex-direction: column;
     h3 {
       margin-bottom: 31px;
-      font-family: Oswald;
       font-style: normal;
       font-weight: bold;
       font-size: 54px;
@@ -114,7 +111,6 @@ button:hover {
     }
     p {
       color: #ffff;
-      font-family: Oswald;
       font-style: normal;
       font-weight: normal;
       font-size: 16px;
@@ -140,7 +136,6 @@ button:hover {
       margin-top: 25px;
       margin-bottom: 43px;
       color: #bcb9c3;
-      font-family: Oswald;
       font-style: normal;
       font-weight: normal;
       font-size: 25px;
@@ -213,7 +208,6 @@ button:hover {
           content: '';
           padding-bottom: 10px;
           padding-top: 10px;
-          font-family: Oswald;
           font-style: normal;
           font-weight: bold;
           padding-right: 15px;
@@ -230,8 +224,7 @@ button:hover {
         justify-content: center;
         align-items: center;
         font-size: 25px;
-        margin-top: 14px;
-        margin-left: 14px;
+        margin: 14px 0 14px 14px;
         @media screen and (max-width: 380px) {
           font-size: 20px;
         }
