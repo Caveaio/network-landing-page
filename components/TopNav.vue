@@ -25,7 +25,10 @@ export default {
   },
 
   mounted () {
+    if(process.browser){
+
       window.addEventListener('scroll', () => this.calculateHeaderPosition())
+    }
   },
 
   methods: {
