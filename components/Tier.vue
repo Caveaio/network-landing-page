@@ -13,10 +13,17 @@
       </div>
       <div class="faq">
         <h3>Frequently Asked Questions</h3>
-        <div v-for="faq in faqs" :key="faq.title" class="faq-wrap" :class="{ 'faq-wrap--open' : faq.display }">
+        <div
+          v-for="faq in faqs"
+          :key="faq.title"
+          class="faq-wrap"
+          :class="{ 'faq-wrap--open': faq.display }"
+        >
           <div class="accordion" @click="display($event, faq)">
             <h3>{{ faq.title }}</h3>
-            <div class="faq__icon">{{ faq.display ? faq.icons.f : faq.icons.t }}</div>
+            <div class="faq__icon">
+              {{ faq.display ? faq.icons.f : faq.icons.t }}
+            </div>
           </div>
           <div v-if="faq.display" class="faq-context">
             <span>{{ faq.context }}</span>
@@ -192,13 +199,14 @@ button:hover {
         overflow: hidden;
         background-color: #1a162f;
         width: 100%;
-        transition: all .5s ease;
+        transition: all 0.5s ease;
 
         &:not(:last-child) {
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
         }
 
-        &:hover, &--open {
+        &:hover,
+        &--open {
           background-color: #211d34;
         }
 
@@ -208,7 +216,6 @@ button:hover {
           }
 
           .accordion {
-
           }
         }
       }

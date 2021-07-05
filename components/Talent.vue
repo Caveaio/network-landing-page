@@ -6,9 +6,9 @@
           <h3>Join the best talent from around the globe!</h3>
           <p>
             NETWRK is the place to go to grow, develop your game and become part
-            of a pro organization, whether you are a creator, player, or streamer.
-            Form friendships and partnerships, and earn real rewards for chasing
-            your dreams.
+            of a pro organization, whether you are a creator, player, or
+            streamer. Form friendships and partnerships, and earn real rewards
+            for chasing your dreams.
           </p>
           <p>Learn from and connect with iconic esports businesses</p>
         </div>
@@ -43,7 +43,7 @@ export default {
     height: auto;
     width: 100%;
     background: #1a162f;
-    box-shadow: 0 0 20px rgba(0, 0, 0, .05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
     padding: 6rem 0;
     justify-content: center;

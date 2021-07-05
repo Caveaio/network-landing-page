@@ -161,77 +161,77 @@
       </p>
     </div>
     <div class="inner-section">
-        <svg
-          width="57"
-          height="57"
-          viewBox="0 0 57 57"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g filter="url(#filter0_dd)">
-            <circle
-              cx="29.5"
-              cy="28.5"
-              r="24.5"
-              stroke="currentColor"
-              stroke-width="2"
+      <svg
+        width="57"
+        height="57"
+        viewBox="0 0 57 57"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g filter="url(#filter0_dd)">
+          <circle
+            cx="29.5"
+            cy="28.5"
+            r="24.5"
+            stroke="currentColor"
+            stroke-width="2"
+          />
+          <path
+            d="M30.0711 23.3281L25.1211 28.2781C24.9325 28.4603 24.6799 28.561 24.4177 28.5588C24.1555 28.5565 23.9047 28.4513 23.7193 28.2659C23.5339 28.0805 23.4287 27.8297 23.4265 27.5675C23.4242 27.3053 23.525 27.0527 23.7071 26.8641L29.3641 21.2071C29.5517 21.0196 29.806 20.9143 30.0711 20.9143C30.3363 20.9143 30.5906 21.0196 30.7781 21.2071L36.4351 26.8641C36.6173 27.0527 36.7181 27.3053 36.7158 27.5675C36.7135 27.8297 36.6084 28.0805 36.423 28.2659C36.2376 28.4513 35.9867 28.5565 35.7245 28.5588C35.4623 28.561 35.2097 28.4603 35.0211 28.2781L30.0711 23.3281ZM30.0711 29.3281L25.1211 34.2781C25.0289 34.3736 24.9186 34.4498 24.7965 34.5022C24.6745 34.5546 24.5433 34.5822 24.4105 34.5833C24.2778 34.5845 24.1461 34.5592 24.0232 34.5089C23.9003 34.4586 23.7886 34.3844 23.6947 34.2905C23.6009 34.1966 23.5266 34.0849 23.4763 33.962C23.426 33.8392 23.4007 33.7075 23.4019 33.5747C23.403 33.4419 23.4306 33.3107 23.483 33.1887C23.5355 33.0667 23.6116 32.9563 23.7071 32.8641L29.3641 27.2071C29.5517 27.0196 29.806 26.9143 30.0711 26.9143C30.3363 26.9143 30.5906 27.0196 30.7781 27.2071L36.4351 32.8641C36.6173 33.0527 36.7181 33.3053 36.7158 33.5675C36.7135 33.8297 36.6084 34.0805 36.423 34.2659C36.2376 34.4513 35.9867 34.5565 35.7245 34.5588C35.4623 34.561 35.2097 34.4603 35.0211 34.2781L30.0711 29.3281Z"
+            fill="currentColor"
+          />
+        </g>
+        <defs>
+          <filter
+            id="filter0_dd"
+            x="0"
+            y="0"
+            width="57"
+            height="57"
+            filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB"
+          >
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrixHeader
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
             />
-            <path
-              d="M30.0711 23.3281L25.1211 28.2781C24.9325 28.4603 24.6799 28.561 24.4177 28.5588C24.1555 28.5565 23.9047 28.4513 23.7193 28.2659C23.5339 28.0805 23.4287 27.8297 23.4265 27.5675C23.4242 27.3053 23.525 27.0527 23.7071 26.8641L29.3641 21.2071C29.5517 21.0196 29.806 20.9143 30.0711 20.9143C30.3363 20.9143 30.5906 21.0196 30.7781 21.2071L36.4351 26.8641C36.6173 27.0527 36.7181 27.3053 36.7158 27.5675C36.7135 27.8297 36.6084 28.0805 36.423 28.2659C36.2376 28.4513 35.9867 28.5565 35.7245 28.5588C35.4623 28.561 35.2097 28.4603 35.0211 28.2781L30.0711 23.3281ZM30.0711 29.3281L25.1211 34.2781C25.0289 34.3736 24.9186 34.4498 24.7965 34.5022C24.6745 34.5546 24.5433 34.5822 24.4105 34.5833C24.2778 34.5845 24.1461 34.5592 24.0232 34.5089C23.9003 34.4586 23.7886 34.3844 23.6947 34.2905C23.6009 34.1966 23.5266 34.0849 23.4763 33.962C23.426 33.8392 23.4007 33.7075 23.4019 33.5747C23.403 33.4419 23.4306 33.3107 23.483 33.1887C23.5355 33.0667 23.6116 32.9563 23.7071 32.8641L29.3641 27.2071C29.5517 27.0196 29.806 26.9143 30.0711 26.9143C30.3363 26.9143 30.5906 27.0196 30.7781 27.2071L36.4351 32.8641C36.6173 33.0527 36.7181 33.3053 36.7158 33.5675C36.7135 33.8297 36.6084 34.0805 36.423 34.2659C36.2376 34.4513 35.9867 34.5565 35.7245 34.5588C35.4623 34.561 35.2097 34.4603 35.0211 34.2781L30.0711 29.3281Z"
-              fill="currentColor"
+            <feOffset dx="-1" />
+            <feGaussianBlur stdDeviation="1.5" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0.647059 0 0 0 0 0.466667 0 0 0 0 1 0 0 0 1 0"
             />
-          </g>
-          <defs>
-            <filter
-              id="filter0_dd"
-              x="0"
-              y="0"
-              width="57"
-              height="57"
-              filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
-            >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feColorMatrixHeader
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              />
-              <feOffset dx="-1" />
-              <feGaussianBlur stdDeviation="1.5" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0.647059 0 0 0 0 0.466667 0 0 0 0 1 0 0 0 1 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="BackgroundImageFix"
-                result="effect1_dropShadow"
-              />
-              <feColorMatrix
-                in="SourceAlpha"
-                type="matrix"
-                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-              />
-              <feOffset dx="1" />
-              <feColorMatrix
-                type="matrix"
-                values="0 0 0 0 0.443137 0 0 0 0 0.976471 0 0 0 0 0.356863 0 0 0 1 0"
-              />
-              <feBlend
-                mode="normal"
-                in2="effect1_dropShadow"
-                result="effect2_dropShadow"
-              />
-              <feBlend
-                mode="normal"
-                in="SourceGraphic"
-                in2="effect2_dropShadow"
-                result="shape"
-              />
-            </filter>
-          </defs>
-        </svg>
+            <feBlend
+              mode="normal"
+              in2="BackgroundImageFix"
+              result="effect1_dropShadow"
+            />
+            <feColorMatrix
+              in="SourceAlpha"
+              type="matrix"
+              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            />
+            <feOffset dx="1" />
+            <feColorMatrix
+              type="matrix"
+              values="0 0 0 0 0.443137 0 0 0 0 0.976471 0 0 0 0 0.356863 0 0 0 1 0"
+            />
+            <feBlend
+              mode="normal"
+              in2="effect1_dropShadow"
+              result="effect2_dropShadow"
+            />
+            <feBlend
+              mode="normal"
+              in="SourceGraphic"
+              in2="effect2_dropShadow"
+              result="shape"
+            />
+          </filter>
+        </defs>
+      </svg>
       <h3>Become a <span class="green">pro</span></h3>
       <p>
         Learn from people who've already reached the top. Create your own unique
@@ -267,7 +267,7 @@ export default {
 
     @media screen and (max-width: 991px) {
       width: 100%;
-      
+
       &:not(:last-child) {
         margin-bottom: 4rem;
       }

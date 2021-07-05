@@ -1,12 +1,12 @@
 <template>
-  <header class="header" ref="header" :class="{ 'header--sticky': sticky }">
+  <header ref="header" class="header" :class="{ 'header--sticky': sticky }">
     <div class="container">
       <div class="row">
         <NuxtLink to="/">
           <div class="logo"><img src="@/assets/logo.png" alt="" /></div>
         </NuxtLink>
 
-        <div style="margin-left: auto;">
+        <div style="margin-left: auto">
           <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
         </div>
       </div>
@@ -17,22 +17,22 @@
 <script lang="ts">
 export default {
   name: 'TopNav',
-  
-  data () {
+
+  data() {
     return {
-      sticky: false
+      sticky: false,
     }
   },
 
-  mounted () {
-      window.addEventListener('scroll', () => this.calculateHeaderPosition())
+  mounted() {
+    window.addEventListener('scroll', () => this.calculateHeaderPosition())
   },
 
   methods: {
-      calculateHeaderPosition () {
-        this.sticky = window.scrollY >= 40 ? true : false
-      }
-  }
+    calculateHeaderPosition() {
+      this.sticky = window.scrollY >= 40 ? true : false
+    },
+  },
 }
 </script>
 <style lang="scss" scoped>
@@ -44,12 +44,12 @@ export default {
   align-items: center;
   height: 5rem;
   width: 100%;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 
   &--sticky {
     background-color: #0b0b19;
     top: 0;
-    box-shadow: 4px 0 10px rgba(0,0,0,.25);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.25);
   }
 
   @media screen and (max-width: 380px) {
