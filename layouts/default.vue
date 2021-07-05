@@ -91,12 +91,12 @@ a {
   white-space: nowrap;
   border: 0;
   outline: none;
-    color: black;
+  color: black;
   font-family: 'Work Sans', sans-serif;
   overflow: hidden;
   cursor: pointer;
   font-weight: 700;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   font-size: 0.875em;
   letter-spacing: 0.125em;
   background-color: #41d16b;
@@ -106,7 +106,7 @@ a {
 
   @media screen and (max-width: 380px) {
     width: 100%;
-    padding: .75rem 0;
+    padding: 0.75rem 0;
   }
 
   &:before,
@@ -115,7 +115,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    padding: .75rem 0;
+    padding: 0.75rem 0;
     width: 100%;
     -webkit-clip: rect(0px, 0px, 0px, 0px);
     clip: rect(0px, 0px, 0px, 0px);
@@ -149,7 +149,7 @@ a {
 }
 .glitchingbtn > a {
   display: block;
-    color: #101125;
+  color: #101125;
   text-decoration: none;
   width: 175px;
 }

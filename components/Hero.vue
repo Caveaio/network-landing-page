@@ -3,11 +3,13 @@
     <!--  <img src="@/assets/hero.png" alt="" /> -->
     <div class="content container">
       <h1>Get discovered<span class="green">.</span></h1>
-      <h2>Join the creator <span class="glitch" data-text="NETWRK">NETWRK</span></h2>
+      <h2>
+        Join the creator <span class="glitch" data-text="NETWRK">NETWRK</span>
+      </h2>
       <p>Stream and play. Become a pro.</p>
-      <div style="display: flex;">
-        <div style="margin: 0 auto;">
-        <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
+      <div style="display: flex">
+        <div style="margin: 0 auto">
+          <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
         </div>
       </div>
     </div>
@@ -56,13 +58,13 @@ export default {
     @media screen and (max-width: 768px) {
       font-size: 1.875rem;
       text-shadow: none;
-      margin: .5rem 0 1rem;
+      margin: 0.5rem 0 1rem;
     }
 
     @media screen and (max-width: 380px) {
       font-size: 1.25rem;
       text-shadow: none;
-      margin: .5rem 0 1rem;
+      margin: 0.5rem 0 1rem;
     }
   }
   h1 {
@@ -73,14 +75,14 @@ export default {
 
     @media screen and (max-width: 768px) {
       font-size: 3rem;
-    height: auto;
+      height: auto;
       text-shadow: none;
     }
 
     @media screen and (max-width: 380px) {
       font-size: 2rem;
       text-shadow: none;
-    height: auto;
+      height: auto;
     }
   }
   p {

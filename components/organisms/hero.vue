@@ -38,7 +38,7 @@ export default {
   @media screen and (max-width: 380px) {
     top: 0%;
   }
-  
+
   p {
     font-style: normal;
     font-weight: normal;
