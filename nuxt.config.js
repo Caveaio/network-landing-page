@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   router: {
-    base: '', // Remove when domain is CNAMEd
+    base: '/network-landing-page/', // Remove when domain is CNAMEd
   },
   head: {
     title: 'NETWRK',
