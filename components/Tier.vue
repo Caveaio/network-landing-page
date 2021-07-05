@@ -1,7 +1,7 @@
 <template>
-  <div class="tier-container">
+  <div class="tier-container container">
     <div class="tier-inner">
-      <h3>THE ELITE TIER</h3>
+      <h3>The Elite Tier</h3>
       <p>
         Apply and create a profile to get the opportunity to partner with top
         tier esports & gaming organizations. NETWRK's is the main monetization
@@ -9,20 +9,18 @@
       </p>
       <blockquote>Don't sell your game short. Join the NETWRK</blockquote>
       <div>
-        <a href="#" class="gltichingbtn" data-text="Apply Now">Apply Now</a>
+        <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
       </div>
       <div class="faq">
-        <h3>FREQUENTLY ASKED QUESTIONS</h3>
-        <div v-for="faq in faqs" :key="faq.title" class="faq-wrap">
+        <h3>Frequently Asked Questions</h3>
+        <div v-for="faq in faqs" :key="faq.title" class="faq-wrap" :class="{ 'faq-wrap--open' : faq.display }">
           <div class="accordion" @click="display($event, faq)">
             <h3>{{ faq.title }}</h3>
-            <i class="action">{{ faq.display ? faq.icons.f : faq.icons.t }}</i>
+            <div class="faq__icon">{{ faq.display ? faq.icons.f : faq.icons.t }}</div>
           </div>
-          <transition name="slide-fade">
-            <div v-if="faq.display" class="faq-context">
-              <span>{{ faq.context }}</span>
-            </div>
-          </transition>
+          <div v-if="faq.display" class="faq-context">
+            <span>{{ faq.context }}</span>
+          </div>
         </div>
       </div>
     </div>
@@ -91,30 +89,35 @@ button:hover {
   opacity: 0.5;
 }
 .tier-container {
-  margin-bottom: 50px;
+  margin-bottom: 10rem;
+
   .tier-inner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
     h3 {
-      margin-bottom: 31px;
       font-style: normal;
       font-weight: bold;
       font-size: 54px;
-      line-height: 26px;
+
       @media screen and (max-width: 380px) {
         display: flex;
         justify-content: center;
         align-items: center;
       }
     }
+
     p {
-      color: #ffff;
+      color: #6d739d;
       font-style: normal;
       font-weight: normal;
-      font-size: 16px;
-      line-height: 22px;
+      font-size: 1rem;
+      line-height: 2;
+      text-align: center;
+      max-width: 960px;
+
       @media screen and (max-width: 380px) {
         display: flex;
         justify-content: center;
@@ -128,17 +131,15 @@ button:hover {
         justify-content: center;
         align-items: center;
         font-size: 20px;
-        line-height: 22px;
-        width: 80%;
       }
     }
     blockquote {
       margin-top: 25px;
       margin-bottom: 43px;
-      color: #bcb9c3;
+      color: #fff;
       font-style: normal;
       font-weight: normal;
-      font-size: 25px;
+      font-size: 1rem;
       line-height: 22px;
       @media screen and (max-width: 380px) {
         display: flex;
@@ -149,24 +150,10 @@ button:hover {
         width: 80%;
       }
     }
-    button {
-      background: #f0792e;
-      border-style: solid;
-      color: #f1f1f1;
-      border-radius: 10px;
-      border: none;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 25px;
-      margin-bottom: 45px;
-      @media screen and (max-width: 380px) {
-        font-size: 25px;
-        text-shadow: none;
-        font-size: 16px;
-        line-height: 5px;
-      }
+    .gltichingbtn {
+      margin-bottom: 6rem;
     }
+
     button:hover {
       background-color: transparent;
       transition: 0;
@@ -177,15 +164,17 @@ button:hover {
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      width: 750px;
+
       .accordion {
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
-        width: 750px;
-        background: #1a162f;
-        border-radius: 5px;
-        margin-top: 15px;
+        overflow: hidden;
+        width: 100%;
+        align-items: center;
         z-index: 9;
+
         @media screen and (max-width: 380px) {
           width: 100vw;
           h3 {
@@ -193,9 +182,41 @@ button:hover {
           }
         }
       }
+
+      .faq-wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        cursor: pointer;
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: #1a162f;
+        width: 100%;
+        transition: all .5s ease;
+
+        &:not(:last-child) {
+          margin-bottom: .5rem;
+        }
+
+        &:hover, &--open {
+          background-color: #211d34;
+        }
+
+        &--open {
+          h3 {
+            color: #fff;
+          }
+
+          .accordion {
+
+          }
+        }
+      }
+
       .faq-context {
         display: flex;
         flex-direction: column;
+        padding: 2rem;
         background: #1a162f;
         width: 750px;
         height: auto;
@@ -205,13 +226,8 @@ button:hover {
           // margin-right: 10px;
         }
         span {
-          content: '';
-          padding-bottom: 10px;
-          padding-top: 10px;
-          font-style: normal;
-          font-weight: bold;
-          padding-right: 15px;
-          padding-left: 15px;
+          color: #6d739d;
+
           @media screen and (max-width: 380px) {
             padding-bottom: 10px;
             padding-top: 10px;
@@ -223,27 +239,36 @@ button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 25px;
-        margin: 14px 0 14px 14px;
-        @media screen and (max-width: 380px) {
-          font-size: 20px;
-        }
+        font-size: 2rem;
+        margin-bottom: 2rem;
       }
-      i {
-        display: flex;
+
+      .faq__icon {
         margin-left: auto;
-        justify-content: center;
-        align-items: center;
-        margin-right: 32px;
-        font-size: 25px;
-        font-weight: bold;
-        cursor: pointer;
       }
     }
   }
   .slide-fade-enter {
     transform: translateY(10px);
     transition: all 0.1s ease;
+  }
+
+  .faq-wrap .accordion {
+    padding: 1.5rem 2rem;
+    align-items: center;
+
+    &:hover {
+      h3 {
+        color: #fff;
+      }
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #6d739d;
+      margin: 0;
+    }
   }
 }
 </style>

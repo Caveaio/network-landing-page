@@ -2,11 +2,13 @@
   <div class="hero" :style="{ backgroundImage: `url(${backgroundImagePath})` }">
     <!--  <img src="@/assets/hero.png" alt="" /> -->
     <div class="content container">
-      <h1>Get discovered.</h1>
+      <h1>Get discovered<span class="green">.</span></h1>
       <h2>Join the creator <span class="glitch" data-text="NETWRK">NETWRK</span></h2>
       <p>Stream and play. Become a pro.</p>
-      <div>
-        <a href="#" class="gltichingbtn" data-text="Apply Now">Apply Now</a>
+      <div style="display: flex;">
+        <div style="margin: 0 auto;">
+        <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
+        </div>
       </div>
     </div>
   </div>
@@ -26,19 +28,16 @@ export default {
 <style lang="scss" scoped>
 @use "sass:math";
 .hero {
-  width: calc(100vw - 3rem);
-  height: 100vh;
-  max-height: 740px;
+  height: calc(100vh - 5rem);
   padding: 0 1.5rem;
-  max-width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   place-items: center;
 
   @media screen and (max-width: 380px) {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     padding: 3rem 0 0;
   }
 }
@@ -52,7 +51,7 @@ export default {
   h2 {
     font-weight: bold;
     font-size: 3rem;
-    text-shadow: 2px 0px 0px #71f95b, -2px 0px 4px #a577ff;
+    text-shadow: 2px 0px 0px #71f95b, -2px 0px 0px #a577ff;
 
     @media screen and (max-width: 768px) {
       font-size: 1.875rem;
@@ -68,17 +67,20 @@ export default {
   }
   h1 {
     font-weight: bold;
-    font-size: 76px;
-    text-shadow: 2px 0px 0px #71f95b, -2px 0px 4px #a577ff;
+    font-size: 96px;
+    height: 120px;
+    text-shadow: 2px 0px 0px #71f95b, -2px 0px 0px #a577ff;
 
     @media screen and (max-width: 768px) {
       font-size: 3rem;
+    height: auto;
       text-shadow: none;
     }
 
     @media screen and (max-width: 380px) {
       font-size: 2rem;
       text-shadow: none;
+    height: auto;
     }
   }
   p {
@@ -209,10 +211,10 @@ button {
   left: -2px;
   text-shadow: 1px 0 blue;
   top: 0;
-  color: white;
-  background: black;
+  color: #41d16b;
+  background: #101125;
   overflow: hidden;
   clip: rect(0, 900px, 0, 0);
-  animation: noise-anim-2 3s infinite linear alternate-reverse;
+  animation: noise-anim-2 5s infinite linear alternate-reverse;
 }
 </style>

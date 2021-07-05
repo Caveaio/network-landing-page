@@ -17,8 +17,8 @@
   --dark-700: #2c2444;
   --dark-500: #43415d;
   --dark-400: #655f76;
-  --dark-300: #a09caa;
-  --dark-200: #bcb9c3;
+  --dark-300: #6d739d;
+  --dark-200: #6d739d;
   --dark-100: #d8d6dc;
 }
 .container {
@@ -44,8 +44,10 @@
   margin: 0;
   padding: 0;
   transition: 0.3s;
+  box-sizing: border-box;
   color: white;
   font-family: 'Work Sans', sans-serif;
+
   &::before,
   &::after {
     box-sizing: border-box;
@@ -74,26 +76,33 @@ a {
   text-decoration: none;
 }
 
+.green {
+  color: #41d16b;
+  text-shadow: none;
+}
+
 .gltichingbtn {
-  width: 160px;
-  display: block;
+  display: flex;
+  justify-content: center;
   position: relative;
   margin: auto;
   background: none;
+  flex-shrink: 0;
+  white-space: nowrap;
   border: 0;
   outline: none;
+    color: black;
   font-family: 'Work Sans', sans-serif;
   overflow: hidden;
   cursor: pointer;
   font-weight: 700;
-  padding: .75rem 30px;
+  padding: .75rem 1.5rem;
   font-size: 0.875em;
   letter-spacing: 0.125em;
-  background-color: #7c6adf;
+  background-color: #41d16b;
   border-radius: 25px;
   text-align: center;
-  text-transform: uppercase;
-  transition: all 0.1s ease;
+  transition: all 0.5s ease;
 
   @media screen and (max-width: 380px) {
     width: 100%;
@@ -102,7 +111,7 @@ a {
 
   &:before,
   &:after {
-    content: 'APPLY NOW';
+    content: 'Apply now';
     position: absolute;
     top: 0;
     left: 0;
@@ -128,8 +137,8 @@ a {
     box-shadow: -1px 0 #fff;
   }
   &:hover {
-    background: white;
-    color: black;
+    box-shadow: 0px 0 10px #41d16b;
+    color: #fff;
   }
   &:hover:before {
     animation: glitch-test 1.5s infinite linear alternate-reverse;
@@ -140,7 +149,7 @@ a {
 }
 .glitchingbtn > a {
   display: block;
-  color: white;
+    color: #101125;
   text-decoration: none;
   width: 175px;
 }

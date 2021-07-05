@@ -6,7 +6,7 @@
       <h2>JOIN THE CREATOR <i class="glitch" data-text="NETWRK">NETWRK</i></h2>
       <p>Stream and play. Become a pro.</p>
       <div>
-        <a href="#" class="gltichingbtn" data-text="Apply Now">Apply Now</a>
+        <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
       </div>
     </div>
   </div>

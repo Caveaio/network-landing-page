@@ -1,5 +1,6 @@
 <template>
   <footer>
+    <div class="container">
     <div class="rights">
       <div class="socials">
         <i>
@@ -50,19 +51,24 @@
       </div>
       <ul>
         <li>
-          &copy; All rights reserved NETWRk {{ new Date().getFullYear() }}
+          &copy; All rights reserved NETWRK {{ new Date().getFullYear() }}
         </li>
-        <li>
+        <li style="margin-left: auto;">
           Made by
           <a class="cavea" href="https://cavea.io" target="_blank">Cavea.io</a>
         </li>
+        <li>
         <NuxtLink to="/terms">
-          <li><a href="">Terms of Service</a></li>
+          <a href="">Terms of Service</a>
         </NuxtLink>
+        </li>
+        <li>
         <NuxtLink to="/policy">
-          <li><a href="">Privacy Policy</a></li>
+          <a href="">Privacy Policy</a>
         </NuxtLink>
+        </li>
       </ul>
+    </div>
     </div>
   </footer>
 </template>
@@ -75,20 +81,15 @@ export default {
 <style lang="scss" scoped>
 footer {
   width: 100%;
-  height: 152px;
+  padding: 3rem 0;
   background: #0b0b19;
-  font-style: normal;
-  font-weight: normal;
-  left: 0;
-  bottom: 0;
+
   @media screen and (max-width: 380px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   p {
-    margin-top: 62px;
-    margin-left: 212px;
     @media screen and (max-width: 380px) {
       display: inline-block;
       margin-top: 0px;
@@ -116,11 +117,9 @@ footer {
     }
   }
   .rights {
-    margin-top: 62px;
-    color: #bcb9c3;
+    color: #6d739d;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+
     @media screen and (max-width: 380px) {
       margin-top: 0px;
       display: inline-block;
@@ -129,7 +128,9 @@ footer {
       display: none;
     }
     ul {
+      width: 100%;
       display: flex;
+
       @media screen and (max-width: 380px) {
         display: flex;
         justify-content: center;
@@ -137,16 +138,16 @@ footer {
         margin-top: 0px;
         margin-left: 0px;
       }
-      @media screen and (min-width: 1024px) {
-        margin-top: 25px;
-        margin-left: 0px;
-      }
+
       li {
-        margin-top: 62px;
         justify-content: flex-end;
         list-style-type: none;
-        margin-right: 44px;
         background: #0b0b19;
+
+        &:not(:last-child) {
+          margin-right: 2.5rem;
+        }
+
         @media screen and (max-width: 380px) {
           display: inline-block;
           margin-top: 5px;
@@ -155,7 +156,7 @@ footer {
           margin-top: 5px;
         }
         a {
-          color: #bcb9c3;
+          color: #6d739d;
           text-decoration: none;
         }
         a:hover {

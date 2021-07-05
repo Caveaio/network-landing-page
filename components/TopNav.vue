@@ -7,7 +7,7 @@
         </NuxtLink>
 
         <div style="margin-left: auto;">
-          <a href="#" class="gltichingbtn" data-text="Apply Now">Apply Now</a>
+          <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
         </div>
       </div>
     </div>
@@ -22,19 +22,35 @@ export default {
     return {
       sticky: false
     }
+  },
+
+  mounted () {
+      window.addEventListener('scroll', () => this.calculateHeaderPosition())
+  },
+
+  methods: {
+      calculateHeaderPosition () {
+        this.sticky = window.scrollY >= 40 ? true : false
+      }
   }
 }
 </script>
 <style lang="scss" scoped>
 .header {
-  position: sticky;
+  position: fixed;
   z-index: 1;
-  top: 0;
+  top: 2.5rem;
   display: flex;
   align-items: center;
-  background-color: #1a162f;
   height: 5rem;
   width: 100%;
+  transition: all .2s ease;
+
+  &--sticky {
+    background-color: #0b0b19;
+    top: 0;
+    box-shadow: 4px 0 10px rgba(0,0,0,.25);
+  }
 
   @media screen and (max-width: 380px) {
     .logo img {

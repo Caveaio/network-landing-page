@@ -74,7 +74,7 @@
           </defs>
         </svg>
       </i>
-      <h3>Get scouted</h3>
+      <h3>Get <span class="green">scouted</span></h3>
       <p>
         We're looking for you. You're the new wave of creators, streamers,
         players, dreamers that we are going to propel into the future.
@@ -154,7 +154,7 @@
           </defs>
         </svg>
       </i>
-      <h3>Get contracted</h3>
+      <h3>Get <span class="green">contracted</span></h3>
       <p>
         Be assigned and level up through a tier list. On the Path to fame,
         unlock new rewards for you and your fans.
@@ -232,7 +232,7 @@
             </filter>
           </defs>
         </svg>
-      <h3>Become a pro</h3>
+      <h3>Become a <span class="green">pro</span></h3>
       <p>
         Learn from people who've already reached the top. Create your own unique
         brand and become a pro.
@@ -248,7 +248,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .section {
-  padding: 100px 0 120px;
+  padding: 6rem;
   flex-shrink: 1;
   display: flex;
   text-align: center;
@@ -278,7 +278,7 @@ export default {
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
-    color: #bcb9c3;
+    color: #6d739d;
 
     @media screen and (max-width: 680px) {
       padding-left: 0px;
@@ -290,8 +290,6 @@ export default {
     }
   }
   i {
-    width: 47px;
-    height: 47px;
     text-align: center;
     justify-content: center;
     @media screen and (max-width: 680px) {
@@ -300,23 +298,13 @@ export default {
     }
   }
   h3 {
-    padding-top: 26px;
-    padding-bottom: 10px;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 26px;
+    font-size: 2rem;
     @media screen and (max-width: 680px) {
       width: 100%;
       white-space: nowrap;
     }
   }
 }
-
-// button {
-//   width: 165px;
-//   height: 54px;
-//   border-radius: 50px;
-
-// }
 </style>
