@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Fnetwork-landing-page\u002F_nuxt\u002Fstatic\u002F1625495986",layout:"default",error:a,serverRendered:true,routePath:"\u002Fpolicy",config:{_app:{basePath:"\u002Fnetwork-landing-page\u002F",assetsPath:"\u002Fnetwork-landing-page\u002F_nuxt\u002F",cdnURL:a}}}}(null));
