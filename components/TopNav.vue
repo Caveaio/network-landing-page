@@ -1,5 +1,5 @@
 <template>
-  <header class="header" ref="header" :class="{ 'header--sticky': sticky }">
+  <header ref="header" class="header" :class="{ 'header--sticky': sticky }">
     <div class="container">
       <div class="row">
         <NuxtLink to="/">
@@ -24,8 +24,8 @@ export default {
     }
   },
 
-  mounted () {
-    if(process.browser) {
+  mounted() {
+    if (process.browser) {
       window.addEventListener('scroll', () => this.calculateHeaderPosition())
     }
   },
