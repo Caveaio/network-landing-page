@@ -6,7 +6,9 @@
           <div class="logo"><img src="@/assets/logo.png" alt="" /></div>
         </NuxtLink>
 
-        <div style="margin-left: auto">
+        <a href="https://blog.netwrk.gg" class="link" target="_blank">Blog</a>
+
+        <div>
           <a href="#" class="gltichingbtn" data-text="Apply now">Apply now</a>
         </div>
       </div>
@@ -59,5 +61,12 @@ export default {
       height: 1rem;
     }
   }
+}
+
+.link {
+  color: #fff;
+  margin-left: auto;
+  margin-right: 2.5rem;
+  font-weight: 600;
 }
 </style>
